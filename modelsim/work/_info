@@ -1,0 +1,687 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Computer Architecture/MIPS_assigment/New folder
+vAdd_Address_Branch
+Z0 !s110 1560206868
+!i10b 1
+!s100 ?aO2cA?ReB]koM<@>YJQI2
+IDNG?82EFiFQK;55?A2g8O2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim
+Z3 w1558585208
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_Address_Branch.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_Address_Branch.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1560206867.000000
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_Address_Branch.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_Address_Branch.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@add_@address_@branch
+vAdd_PC
+R0
+!i10b 1
+!s100 00HEG^6;cmTEV6`joEomG1
+I9BhEo::PjlJS[biJznh<z1
+R1
+R2
+Z8 w1559551867
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_PC.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_PC.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z9 !s108 1560206868.000000
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_PC.v|
+!i113 1
+R6
+R7
+n@add_@p@c
+vAdder_32bit
+R0
+!i10b 1
+!s100 46Kf7VlbHSkG3zmhihPOD1
+Ib75IUHX4zgK;ik:C?SV7E2
+R1
+R2
+R3
+Z10 8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Adder_32bit.v
+Z11 FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Adder_32bit.v
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+Z12 !s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Adder_32bit.v|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Adder_32bit.v|
+!i113 1
+R6
+R7
+n@adder_32bit
+vALU_Cal
+R0
+!i10b 1
+!s100 Hl70?B8^0mZVFXHIY2OU:0
+IC5P;]C_c``R<IAzK>PfXI0
+R1
+R2
+w1560220289
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Cal.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Cal.v
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Cal.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Cal.v|
+!i113 1
+R6
+R7
+n@a@l@u_@cal
+vALU_Control
+R0
+!i10b 1
+!s100 3kFQNaVn7N9Bn;C:c:@SF1
+IO88HiU?I1gRL<8XaTl:4a0
+R1
+R2
+R3
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Control.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Control.v
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Control.v|
+!i113 1
+R6
+R7
+n@a@l@u_@control
+vbinary_7seg
+R0
+!i10b 1
+!s100 gch2;2877KR@GgWE`^lF83
+IMV1[RH5OLI8DhX;hYjMQ:1
+R1
+R2
+R3
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/binary_7seg.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/binary_7seg.v
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/binary_7seg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/binary_7seg.v|
+!i113 1
+R6
+R7
+vBoard
+R0
+!i10b 1
+!s100 iCz6WRLn?1b<TQ3JZSPB;0
+I`Z1CF1>_Pfl5?n9c]BF:00
+R1
+R2
+w1560222592
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Board.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Board.v
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Board.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Board.v|
+!i113 1
+R6
+R7
+n@board
+vData_Memory
+R0
+!i10b 1
+!s100 Z7[=d4TbP1BGSa<34g7mM3
+IY_]Cb6MKN=icdRAg6==F=1
+R1
+R2
+w1560175331
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Data_Memory.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Data_Memory.v
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Data_Memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Data_Memory.v|
+!i113 1
+R6
+R7
+n@data_@memory
+vdivide_clock
+R0
+!i10b 1
+!s100 D3Q=YR:^Fd30RkBbz_^QO2
+Id;bJFzn6=ISO33Dgc5gXg0
+R1
+R2
+w1560221153
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/divide_clock.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/divide_clock.v
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/divide_clock.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/divide_clock.v|
+!i113 1
+R6
+R7
+vEPC
+Z14 !s110 1560206869
+!i10b 1
+!s100 4ZnaD^zbRE5WE_d;?2lKg3
+I8dTJO979aM4Ak[2H<bjFb1
+R1
+R2
+Z15 w1560069463
+Z16 8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/EPC.v
+Z17 FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/EPC.v
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+Z18 !s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/EPC.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/EPC.v|
+!i113 1
+R6
+R7
+n@e@p@c
+vException_Handle
+R14
+!i10b 1
+!s100 jHLNZN1fD`1KkSYY>ofQ82
+IDSjDcZnBEezHKa2Ce8;kR1
+R1
+R2
+R8
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Exception_Handle.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Exception_Handle.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z20 !s108 1560206869.000000
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Exception_Handle.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Exception_Handle.v|
+!i113 1
+R6
+R7
+n@exception_@handle
+vfull_adder
+R0
+!i10b 1
+!s100 _Z@4W6Mm4zJ_GfI`n<0k;0
+Id;WP^anaoJ?kmNQE23oYb1
+R1
+R2
+R3
+R10
+R11
+L0 35
+R4
+r1
+!s85 0
+31
+R9
+R12
+R13
+!i113 1
+R6
+R7
+vhalf_adder
+R0
+!i10b 1
+!s100 :zoD6o=Ni`iMbJ8Vkf1I?2
+I8S2cPX=PDbf[HldWEGD@31
+R1
+R2
+R3
+R10
+R11
+L0 25
+R4
+r1
+!s85 0
+31
+R9
+R12
+R13
+!i113 1
+R6
+R7
+vInstruction_Mem
+R14
+!i10b 1
+!s100 >WFJ>V4zn135;QWLYI?2z1
+INNd>QHbBC]G1@F1Z]0E_L2
+R1
+R2
+w1560221134
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Instruction_Mem.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Instruction_Mem.v
+L0 1
+R4
+r1
+!s85 0
+31
+R20
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Instruction_Mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Instruction_Mem.v|
+!i113 1
+R6
+R7
+n@instruction_@mem
+vInterface
+Z21 !s110 1560207090
+!i10b 1
+!s100 1D28`ilTjh:aKi1S`[Z8S1
+I23=P?=oMbP4DaZae8LJNh0
+R1
+R2
+Z22 w1560207087
+Z23 8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Interface.v
+Z24 FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Interface.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z25 !s108 1560207090.000000
+Z26 !s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Interface.v|
+Z27 !s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Interface.v|
+!i113 1
+R6
+R7
+n@interface
+vJumpAddressing
+R14
+!i10b 1
+!s100 Az6hXS7h;Ea5nQeVVQfi92
+I4T;DgkYCldNLB2LXd`1k60
+R1
+R2
+R8
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/JumpAddressing.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/JumpAddressing.v
+L0 1
+R4
+r1
+!s85 0
+31
+R20
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/JumpAddressing.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/JumpAddressing.v|
+!i113 1
+R6
+R7
+n@jump@addressing
+vLCD
+R14
+!i10b 1
+!s100 Nm>BW75L;m;FO;^]?OJKX1
+I8Mak:EkMBVNKLS204>zW72
+R1
+R2
+w1559679676
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCD.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCD.v
+L0 1
+R4
+r1
+!s85 0
+31
+R20
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCD.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCD.v|
+!i113 1
+R6
+R7
+n@l@c@d
+vLCDencoder
+Z28 !s110 1560206866
+!i10b 1
+!s100 _ER_V;YCj3CiNfSQbB;gI2
+IT`^Pff[ePJ7TViFheF_Q@3
+R1
+R2
+R8
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCDencoder.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCDencoder.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z29 !s108 1560206866.000000
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCDencoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCDencoder.v|
+!i113 1
+R6
+R7
+n@l@c@dencoder
+vMain_Control
+R28
+!i10b 1
+!s100 C]2MCaB?8>lQ^F6<ZFW2P3
+I7ElUHfCJ_Af[Fe>Z9mgnO3
+R1
+R2
+w1559554443
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Main_Control.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Main_Control.v
+L0 3
+R4
+r1
+!s85 0
+31
+R29
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Main_Control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Main_Control.v|
+!i113 1
+R6
+R7
+n@main_@control
+vMultiply
+Z30 !s110 1560206867
+!i10b 1
+!s100 hEM>WWz>?zGdjBi7hkl@X0
+I3enLMgd`PbV_FjUHK3ehH3
+R1
+R2
+w1560221660
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Multiply.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Multiply.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Multiply.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Multiply.v|
+!i113 1
+R6
+R7
+n@multiply
+vMux_ALU
+R30
+!i10b 1
+!s100 =fYa5VlNLm]7gI@^bZX5_0
+Ihz_G8j7CPh?Pz4EYU<a[<1
+R1
+R2
+R3
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_ALU.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_ALU.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_ALU.v|
+!i113 1
+R6
+R7
+n@mux_@a@l@u
+vMux_Jump
+R30
+!i10b 1
+!s100 NBd7;ZZNkL[0Hn`AQ7M:31
+IRiknSMP4GoSQe60k9k=PH0
+R1
+R2
+R3
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Jump.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Jump.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Jump.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Jump.v|
+!i113 1
+R6
+R7
+n@mux_@jump
+vMux_Memory
+R30
+!i10b 1
+!s100 QmzPPEYEG;3^>fmGRiFzI1
+IFMG`g[FMO[KH5?jgfGH8F1
+R1
+R2
+R3
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Memory.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Memory.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Memory.v|
+!i113 1
+R6
+R7
+n@mux_@memory
+vMux_PC
+R30
+!i10b 1
+!s100 UeL@KFe7nPE8l4LCWCn:d3
+Ijd_0?[h[>FnZl[`]6fghz2
+R1
+R2
+R3
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_PC.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_PC.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_PC.v|
+!i113 1
+R6
+R7
+n@mux_@p@c
+vMux_Register
+R30
+!i10b 1
+!s100 ?IJ5mPA;`oOfc>E_Lb>I]3
+IIJXAPfAHVo=U961=@K3>`1
+R1
+R2
+R8
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Register.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Register.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Register.v|
+!i113 1
+R6
+R7
+n@mux_@register
+vPC
+R30
+!i10b 1
+!s100 56[bf;70e81VX3I92ejjJ0
+IbH8z78N^Mjdi4TZn6k@Eo0
+R1
+R2
+R8
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/PC.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/PC.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/PC.v|
+!i113 1
+R6
+R7
+n@p@c
+vRegister_File
+R30
+!i10b 1
+!s100 EI?41^n[Hz^fDH2iY5U7J1
+ILWJgQ:aL`Ca4z6Y4S2lV_1
+R1
+R2
+w1560175330
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Register_File.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Register_File.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Register_File.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Register_File.v|
+!i113 1
+R6
+R7
+n@register_@file
+vSign_Extend
+R30
+!i10b 1
+!s100 a=5U@i<jNLAW4MY<bMBYl3
+IY0c7M`T@BUE_DSW`I]N280
+R1
+R2
+R8
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Sign_Extend.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Sign_Extend.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Sign_Extend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Sign_Extend.v|
+!i113 1
+R6
+R7
+n@sign_@extend
+vtest_EPC
+R14
+!i10b 1
+!s100 cbH4=l1GVFzH1]dB8k;k01
+Io0_IRW?`]5e0IZ9fdSIV]0
+R1
+R2
+R15
+R16
+R17
+L0 12
+R4
+r1
+!s85 0
+31
+R9
+R18
+R19
+!i113 1
+R6
+R7
+ntest_@e@p@c
+vtest_interface
+R21
+!i10b 1
+!s100 b3Df3MRDGd@7Sb`dC?lck0
+I;]L7n9i`?mS9Ok8N?iJ<11
+R1
+R2
+R22
+R23
+R24
+L0 220
+R4
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R6
+R7
+vTwo_Complement
+R30
+!i10b 1
+!s100 leTogM7LB7iPbJ>IQN;=40
+Ib7ZD@CgHX=Dn75O8GGzUX1
+R1
+R2
+R8
+8E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Two_Complement.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Two_Complement.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Two_Complement.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Two_Complement.v|
+!i113 1
+R6
+R7
+n@two_@complement

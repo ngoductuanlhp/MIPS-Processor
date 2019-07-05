@@ -1,0 +1,44 @@
+module Exception_Handle(ALU_out, ALUOp,rst, ALUControl,  OverFlow,read_data2, Enable);
+input [3:0]ALUControl;
+input [31:0]read_data2;
+input [31:0]ALU_out;
+input [1:0]ALUOp;
+input OverFlow,rst;
+output Enable;
+//Enable =1 -> exception 
+assign Enable = (ALUOp==2'b00 & (ALU_out[0] | ALU_out[1])) ? 1:  
+		(&ALUControl & ~|read_data2) ? 1:  //check divide 0 
+              	(OverFlow)? 1: 0;  // invalid address
+endmodule 
+
+module testException1();
+//input
+reg [31:0]ALU_out, read_data2;
+reg OverFlow;
+reg [1:0] ALUOp;
+reg [3:0]ALUControl;
+wire Enable;
+
+Exception_Handle testException1(ALU_out, ALUOp, ALUControl,  OverFlow,read_data2, Enable);
+initial begin
+// test divide 0
+OverFlow=0;
+read_data2=32'b0;
+ALUControl= 4'b1111;
+ALU_out=32'b0111;
+// test invalid address
+#10
+OverFlow=0;
+read_data2=32'b1;
+ALUOp=2'b00;
+ALU_out=32'b0110;
+#10
+OverFlow=1;
+
+ALUOp=2'b11;
+
+#10
+OverFlow=0;
+
+end
+endmodule

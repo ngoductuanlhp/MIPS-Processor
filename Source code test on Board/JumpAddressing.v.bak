@@ -1,0 +1,27 @@
+module JumpAddressing(PC_in,instruction,PC_out);
+
+	input [3:0]PC_in;
+	input [25:0]instruction;
+	output [31:0]PC_out;
+	wire [27:0]temp;
+
+	assign PC_out={PC_in,instruction,2'b00};
+endmodule
+
+module test_JumpAddressing();
+
+	reg [3:0]PC_in;
+	reg [25:0]instruction;
+	wire [31:0]PC_out;
+	JumpAddressing m(PC_in,instruction,PC_out);
+	
+initial begin
+PC_in=4'b0000;
+instruction=26'b00000000000000000000001011;
+#10 
+instruction=26'b00000000000000000000110000;
+#10
+PC_in=4'b0001;
+instruction=26'b00000000000000000000111100;
+end
+endmodule

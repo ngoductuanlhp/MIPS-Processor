@@ -1,0 +1,8 @@
+module LCDencoder(data_in,data_out);
+	
+	input [3:0]data_in;
+	output [8:0]data_out;
+	
+	assign data_out={5'b10011,data_in};
+	
+endmodule

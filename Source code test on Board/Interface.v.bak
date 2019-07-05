@@ -1,0 +1,270 @@
+module Interface(
+clk,clk_small,rst,
+instruction,read_data1,read_data2,ALU_out,read_data_mem,sign_extend_out,PC_output,PC_input,reg_write_data,EPCOut,
+RegDst,Branch,MemRead,MemtoReg,MemWrite,ALUSrc,RegWrite,Enable,Jump,ALUOp
+);
+	
+	//input
+	input 	clk,
+		clk_small,
+	      	rst;
+			
+	//output
+	//Data output of submodules
+	output [31:0]	instruction,//output of Instruction_Mem
+			read_data1,//output of Register_File
+			read_data2,
+			ALU_out,//output of ALU
+			read_data_mem,//output of Data_Mem
+			sign_extend_out,//output of Sign_Extend
+			PC_output,//output of PC
+			PC_input,
+			reg_write_data,
+			EPCOut;
+	//Control output				
+	output 	RegDst,
+				Branch,
+				MemRead,
+				MemtoReg,
+				MemWrite,
+				ALUSrc,
+				RegWrite,
+				Enable,
+				Jump;
+				
+	output [1:0] ALUOp;
+	
+	//wire
+	wire [31:0] PC_input,
+					Add_PC_output,
+					Add_Address_Branch_output,
+					write_register,
+					ALU_data2,
+					PC_output_jump,
+					PC_output,
+					PC_output_MUX_branch;			
+	wire [3:0] 	ALUControl;
+	
+	wire 	Zero,
+		OverFlow;  
+	
+	//submodules
+	EPC epc(
+			.Enable(Enable),
+			.PC_in(PC_output),
+			.EPCOut(EPCOut)
+		);
+	Exception_Handle Exception(
+	// input
+			.OPCode(instruction[31:26]),
+			.ALU_out(ALU_out),
+			.ALUOp(ALUOp),
+			.rst(rst),
+			.ALUControl(ALUControl),
+			.OverFlow(OverFlow),
+			.read_data2(read_data2),
+	//output
+			.Enable(Enable)
+			);
+	PC module_PC(
+	//Input
+			.Enable(Enable),
+			.PC_in(PC_input),
+			.clk(clk),
+			.rst(rst),
+	//Output	
+			.PC_out(PC_output)
+			);
+					
+	Add_PC module_Add_PC(
+	//Input
+			.PC_in(PC_output),
+	//Output
+			.PC_out(Add_PC_output)
+			);
+					
+	Add_Address_Branch module_Add_Address_Branch(
+	//Input
+			.PC_in(Add_PC_output),
+			.offset(sign_extend_out),
+	//Output	
+			.PC_out(Add_Address_Branch_output)
+			);
+					
+	Mux_PC module_Mux_PC(
+	//Input
+			.PC_in_add4(Add_PC_output),
+			.PC_in_addim(Add_Address_Branch_output),
+			.Branch(Branch),
+			.Zero(Zero),
+	//Output	
+			.PC_out(PC_output_MUX_branch)
+			);
+	JumpAddressing module_JumpAddressing(
+			.PC_in(Add_PC_output[31:28]),
+			.instruction(instruction[25:0]),
+			.PC_out(PC_output_jump)
+			);
+	Mux_Jump module_MUX_Jump(
+			.PC_jump(PC_output_jump),
+			.PC_other(PC_output_MUX_branch),
+			.Jump(Jump),
+			.PC_out(PC_input)
+			);
+	Instruction_Mem module_Instruction_Mem(
+	//Input
+			.PC(PC_output),
+	//Output
+			.instruction(instruction)
+			);
+					
+	Main_Control module_Main_Control(
+	//Input
+			.Opcode(instruction[31:26]),
+			.rst(rst),
+	//Output	
+			.RegDst(RegDst),
+			.Branch(Branch),
+			.MemRead(MemRead),
+			.MemtoReg(MemtoReg),
+			.MemWrite(MemWrite),
+			.ALUSrc(ALUSrc),
+			.RegWrite(RegWrite),
+			.ALUOp(ALUOp),
+			.Jump(Jump)
+			);
+					
+	Mux_Register module_Mux_Register(
+	//Input
+			.RegDst(RegDst),
+			.rt_register(instruction[20:16]),
+			.rd_register(instruction[15:11]),
+	//Output	
+			.write_register(write_register)
+			);
+					
+	Register_File module_Register_File(
+	//Input	
+			.read_register1(instruction[25:21]),
+			.read_register2(instruction[20:16]),
+			.write_register(write_register),
+			.write_data(reg_write_data),
+			.RegWrite(RegWrite),
+			.clk(clk),
+			.rst(rst),
+	//Output	
+			.read_data1(read_data1),
+			.read_data2(read_data2)
+			);
+					
+	Sign_Extend module_Sign_Extend(
+	//Input
+			.sign_extend_in(instruction[15:0]),
+	//Output	
+			.sign_extend_out(sign_extend_out)
+			);
+					
+	Mux_ALU module_Mux_ALU(
+	//Input	
+			.read_data2(read_data2),
+			.sign_extend_data(sign_extend_out),
+			.ALUSrc(ALUSrc),
+	//Output	
+			.data_out(ALU_data2)
+			);
+					
+	ALU_Control module_ALU_Control(
+	//Input
+			.function_code(instruction[5:0]), // for exception handle
+			.ALUOp(ALUOp),
+	//Output	
+			.ALUControl(ALUControl)
+			);
+	
+	ALU_Cal module_ALU_Cal(
+	//Input	
+			.read_data1(read_data1),
+			.data2(ALU_data2),
+			.ALUControl(ALUControl),
+			.clk(clk_small),
+			.rst(clk),
+	//Output	
+			.ALU_out(ALU_out),
+			.Zero(Zero),
+			.overflow(OverFlow)
+			);
+				
+	Data_Memory module_Data_Memory(
+	//Input	
+			.address(ALU_out),
+			.write_data(read_data2),
+			.MemWrite(MemWrite),
+			.MemRead(MemRead),
+			.clk(clk),
+			.rst(rst),
+	//Output	
+			.read_data(read_data_mem)
+			);
+					
+	Mux_Memory module_Mux_Memory(
+	//Input	
+			.read_data(read_data_mem),
+			.ALU_out(ALU_out),
+			.MemtoReg(MemtoReg),
+	//Output	
+			.reg_write_data(reg_write_data)
+			);
+	
+endmodule
+
+
+module test_interface();
+reg clk, clk_small,rst;
+			
+	//output
+	//Data output of submodules
+wire [31:0] 	instruction,//output of Instruction_Mem
+		read_data1,//output of Register_File
+		read_data2,
+		ALU_out,//output of ALU
+		read_data_mem,//output of Data_Mem
+		sign_extend_out,//output of Sign_Extend
+		PC_output,//output of PC
+		PC_input,
+		reg_write_data,
+		EPCOut;
+	//Control output				
+wire 	RegDst,
+	Branch,
+	MemRead,
+	MemtoReg,
+	MemWrite,
+	ALUSrc,
+	RegWrite,
+	Enable,
+	Jump;
+				
+wire [1:0] ALUOp;
+
+Interface1 in(
+clk,clk_small,rst,
+instruction,read_data1,read_data2,ALU_out,read_data_mem,sign_extend_out,PC_output,PC_input,reg_write_data,EPCOut,
+RegDst,Branch,MemRead,MemtoReg,MemWrite,ALUSrc,RegWrite,Enable,Jump,ALUOp
+);
+
+initial begin
+rst=1;
+#5 rst=0;
+#10 rst=1;
+end
+
+initial begin
+clk_small=0;
+forever #1 clk_small=~clk_small;
+end
+
+initial begin
+clk=0;
+forever #250 clk=~clk;
+end
+endmodule

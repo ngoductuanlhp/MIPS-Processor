@@ -1,0 +1,50 @@
+module PC(PC_in,PC_out,clk,Enable,rst);
+	input [31:0]PC_in;
+	input clk,rst,Enable;
+	output reg [31:0]PC_out;
+
+	always@(posedge clk  or negedge rst)
+		begin
+		if(!rst)
+			PC_out<=32'b11111111111111111111111111111100;
+<<<<<<< HEAD:MIPS_Processor_ModelSim/PC.v.bak
+		else if (!Enable)
+=======
+		else if (!Enable || PC_in==0)
+>>>>>>> d9856fa1214f1556272154436e0d9490d666ea70:Test_22_5/PC.v
+			PC_out<=PC_in;
+		end
+endmodule
+
+module testPC();
+// input 
+reg [31:0]PC_in;
+reg clk, rst, Enable;
+// output 
+wire [31:0]PC_out;
+
+PC pc(
+	.PC_in(PC_in),
+	.Enable(Enable),
+	.clk(clk),
+	.rst(rst),
+	.PC_out(PC_out)
+);
+
+initial begin
+PC_in = 32'b11010;
+Enable=0;
+#20
+PC_in =32'b111010111;
+end
+initial begin
+clk=0; forever #20 clk=~clk;
+end
+
+initial begin
+rst=1;
+#2 rst=0;
+#30 rst=1;
+end
+
+endmodule 

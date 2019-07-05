@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at Register_File.v(14): always construct contains both blocking and non-blocking assignments File: E:/Computer Architecture/MIPS_assigment/Assignment_local/Quartus/Register_File.v Line: 14

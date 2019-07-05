@@ -1,0 +1,194 @@
+{E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/EPC.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/EPC.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module EPC
+-- Compiling module test_EPC
+
+Top level modules:
+	test_EPC
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Sign_Extend.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Sign_Extend.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Sign_Extend
+
+Top level modules:
+	Sign_Extend
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Control.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU_Control
+
+Top level modules:
+	ALU_Control
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Memory.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Memory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux_Memory
+
+Top level modules:
+	Mux_Memory
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCD.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCD.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module LCD
+
+Top level modules:
+	LCD
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Adder_32bit.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Adder_32bit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Adder_32bit
+-- Compiling module half_adder
+-- Compiling module full_adder
+
+Top level modules:
+	Adder_32bit
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_Address_Branch.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_Address_Branch.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Add_Address_Branch
+
+Top level modules:
+	Add_Address_Branch
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_ALU.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_ALU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux_ALU
+
+Top level modules:
+	Mux_ALU
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Main_Control.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Main_Control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Main_Control
+
+Top level modules:
+	Main_Control
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Two_Complement.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Two_Complement.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Two_Complement
+
+Top level modules:
+	Two_Complement
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Register.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Register.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux_Register
+
+Top level modules:
+	Mux_Register
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/JumpAddressing.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/JumpAddressing.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module JumpAddressing
+
+Top level modules:
+	JumpAddressing
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Instruction_Mem.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Instruction_Mem.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Instruction_Mem
+
+Top level modules:
+	Instruction_Mem
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/divide_clock.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/divide_clock.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module divide_clock
+
+Top level modules:
+	divide_clock
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Board.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Board.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Board
+
+Top level modules:
+	Board
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Multiply.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Multiply.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Multiply
+
+Top level modules:
+	Multiply
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Interface.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Interface.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Interface
+-- Compiling module test_interface
+
+Top level modules:
+	test_interface
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Cal.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/ALU_Cal.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU_Cal
+
+Top level modules:
+	ALU_Cal
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Exception_Handle.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Exception_Handle.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Exception_Handle
+
+Top level modules:
+	Exception_Handle
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Data_Memory.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Data_Memory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Data_Memory
+
+Top level modules:
+	Data_Memory
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/binary_7seg.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/binary_7seg.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module binary_7seg
+
+Top level modules:
+	binary_7seg
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_PC.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Add_PC.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Add_PC
+
+Top level modules:
+	Add_PC
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCDencoder.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/LCDencoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module LCDencoder
+
+Top level modules:
+	LCDencoder
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/PC.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/PC.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_PC.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_PC.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux_PC
+
+Top level modules:
+	Mux_PC
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Register_File.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Register_File.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Register_File
+
+Top level modules:
+	Register_File
+
+} {} {}} {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Jump.v} {1 {vlog -work work -stats=none {E:/Computer Architecture/MIPS_assigment/Assignment_Submission/Assignment2_MIPS_Processor/modelsim/Mux_Jump.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux_Jump
+
+Top level modules:
+	Mux_Jump
+
+} {} {}}

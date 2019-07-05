@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Computer Architecture/MIPS_assigment/Assignment_local/Quartus
+vRegister_File
+!s110 1559553757
+!i10b 1
+!s100 4:;86AKL<mcG]MLgm0lR:1
+IJef5;`hzVa:njgiA_i1YL1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1559553690
+8E:/Computer Architecture/MIPS_assigment/Assignment_local/Quartus/Register_File.v
+FE:/Computer Architecture/MIPS_assigment/Assignment_local/Quartus/Register_File.v
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1559553757.000000
+!s107 E:/Computer Architecture/MIPS_assigment/Assignment_local/Quartus/Register_File.v|
+!s90 -reportprogress|300|-work|work|E:/Computer Architecture/MIPS_assigment/Assignment_local/Quartus/Register_File.v|
+!i113 1
+o-work work
+tCvgOpt 0
+n@register_@file

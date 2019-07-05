@@ -1,0 +1,113 @@
+module Multiply(
+data1,data2,clk,rst,out,overflow
+);
+input [31:0]	data1,data2;
+input 		clk,rst;
+output reg	[31:0]	out;	
+output reg 	overflow;
+
+reg	[63:0]	product;
+reg [5:0]count;
+reg [2:0]state;
+reg [2:0]substate;
+
+wire [31:0]sum;
+wire add_overflow;
+wire [31:0]data1_m,data2_m;
+wire [31:0]multiplier,multiplicant;
+wire [31:0]product_m;
+
+Adder_32bit m0(sum,add_overflow,multiplicant,product[63:32]);
+Two_Complement m1(multiplicant_m,multiplicant);
+Two_Complement m2(multiplier_m,multiplier);
+Two_Complement m3(product_m,product[31:0]);
+
+assign multiplicant	=	(data1[31]==0) ? data1 : data1_m;
+assign multiplier	=	(data2[31]==0) ? data2 : data2_m;
+
+always@(posedge clk or negedge rst) begin
+	if(~rst) begin
+		count	<=	6'b0;
+		state	<=	4'b0;
+		substate<=	4'b0;
+		product	<=	32'b0;
+	end
+	else begin
+		case(state)
+		0:begin
+			product	<=	{32'b0,multiplier};
+			state	<=	4'd1;
+		end	
+		1:begin
+			if(count >= 32 )
+				state	<=	2;
+			else begin
+				case(substate)
+				0:begin
+					if(product[0] == 1'b0)
+						substate<=	2;
+					else
+						substate<=	1;
+				end
+				1:begin
+					product[63:32]	<=	sum;
+					substate	<=	2;
+				end
+				2:begin
+					product		<=	{1'b0,product[63:1]};
+					substate	<=	3;
+				end
+				3:begin
+					count		<=	count + 1'b1;
+					substate	<=	0;	
+				end
+				endcase
+			end
+		end
+		2:begin
+			if(data1[31]^data2[31]==0)
+				out	<=	product[31:0];
+			else
+				out	<=	product_m;
+			if(product[63:32]!=32'b0)
+				overflow	<=	1;
+			else 
+				overflow	<=	0;
+			state	<=	3;
+		end
+		endcase
+	end
+end
+
+endmodule
+
+module tst_Multiply();
+reg [31:0]multiplier,multiplicant;
+reg clk,rst;
+wire [31:0]out;
+wire overflow;
+Multiply m0(
+multiplier,multiplicant,clk,rst,out,overflow
+);
+
+initial begin
+rst =1;
+#5 rst=0;
+# 5 rst=1;
+#450 rst=0;
+#5 rst=1;
+end
+
+initial begin
+clk=0;
+forever #2 clk=~clk;
+end
+
+initial begin
+multiplicant =32'd5;
+multiplier   =32'd13;
+#460 multiplicant =32'd4;
+multiplier   =32'd10;
+end
+endmodule
+

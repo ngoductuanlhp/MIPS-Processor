@@ -1,0 +1,35 @@
+module Register_File(read_register1, read_register2 ,write_register, write_data, RegWrite,clk, read_data1, read_data2);
+	
+	input [4:0]read_register1,read_register2,write_register;
+	input [31:0]write_data;
+	input RegWrite,clk;
+	
+	output [31:0]read_data1,read_data2;
+	integer i;
+	reg [31:0]register[0:22];
+
+	assign read_data1=register[read_register1];
+	assign read_data2=register[read_register2];
+
+	always @(negedge clk)
+	begin
+		if (RegWrite)
+		begin
+			register[write_register]<=write_data;
+		end
+	end
+
+// initial isntrcution file
+
+initial begin
+register[16]=32'd0;
+register[17]=32'd1;
+register[18]=32'd2;
+register[19]=32'd3;
+register[20]=32'd4;
+register[21]=32'd5;
+for (i=8; i<16; i=i+1) register[i]=32'b0;
+end
+
+endmodule 
+

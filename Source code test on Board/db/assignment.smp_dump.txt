@@ -1,0 +1,23 @@
+
+State Machine - |Board|LCD:lcd|stateLCD
+Name stateLCD.0101 stateLCD.0100 stateLCD.0011 stateLCD.0010 stateLCD.0001 stateLCD.0000 
+stateLCD.0000 0 0 0 0 0 0 
+stateLCD.0001 0 0 0 0 1 1 
+stateLCD.0010 0 0 0 1 0 1 
+stateLCD.0011 0 0 1 0 0 1 
+stateLCD.0100 0 1 0 0 0 1 
+stateLCD.0101 1 0 0 0 0 1 
+
+State Machine - |Board|Interface:module_interface|ALU_Cal:module_ALU_Cal|Multiply:m4|substate
+Name substate.011 substate.010 substate.001 substate.000 
+substate.000 0 0 0 0 
+substate.001 0 0 1 1 
+substate.010 0 1 0 1 
+substate.011 1 0 0 1 
+
+State Machine - |Board|Interface:module_interface|ALU_Cal:module_ALU_Cal|Multiply:m4|state
+Name state.011 state.010 state.001 state.000 
+state.000 0 0 0 0 
+state.001 0 0 1 1 
+state.010 0 1 0 1 
+state.011 1 0 0 1 

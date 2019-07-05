@@ -1,0 +1,28 @@
+module EPC(Enable, PC_in, EPCOut);
+input Enable;
+input [31:0]PC_in;
+output reg [31:0] EPCOut;
+
+always@(posedge Enable)
+begin
+	EPCOut<=PC_in;
+end
+endmodule
+
+module test_EPC();
+reg  Enable;
+reg [31:0]PC_in;
+wire [31:0] EPCOut;
+
+initial 
+begin
+	Enable =0;
+	forever #10 Enable =~Enable;
+end
+
+initial begin
+	for (PC_in=1; PC_in<16; PC_in =PC_in +1) #5;
+end
+EPC epc(Enable, PC_in, EPCOut);
+
+endmodule

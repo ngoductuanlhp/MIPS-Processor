@@ -1,0 +1,50 @@
+module Board(KEY, SW, LEDR,LEDG, HEX0, HEX1, HEX2 , HEX3, HEX4, HEX5, HEX6, HEX7);
+input [1:0]KEY;
+input [3:0]SW;
+output [8:0]LEDR;
+output [1:0]LEDG;
+/*
+		0:  RegDst;
+		1:  RegWrite
+		2:  Branch
+		3:  Memread
+		4:  MemWrite
+		5:  MemToReg
+		6:  ALUSrc
+		7:  Enable
+		8: Jump
+*/
+output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 , HEX6 , HEX7;
+wire [31:0] read_data1, read_data2,ALU_out,read_data_mem,sign_extend_out,instruction,PC_output,PC_input, reg_write_data;
+wire [1:0]ALUOP;
+reg [31:0]out;
+
+Interface1(~KEY[0],KEY[1],instruction,read_data1,read_data2,ALU_out,read_data_mem,sign_extend_out,PC_output,PC_input,reg_write_data,
+LEDR[0],LEDR[2],LEDR[2],LEDR[5],LEDR[4],LEDR[6],LEDR[1],LEDR[7],LEDR[8],LEDG[1:0]);
+
+always @(*)
+begin
+	case (SW)
+		3'b000: out=read_data1;  	//0: read_data1
+		3'b001: out=read_data2;  	//1: read_data2
+		3'b010: out=ALU_out;		//2: ALU_out
+		3'b011: out=read_data_mem;      //3: read_data_mem
+		3'b100: out=sign_extend_out;    //4: sign_extend_out
+		3'b101: out=PC_input;		//5: PC_input
+		3
+		3'b110: out=instruction;	//6: instruction
+		3'b111: out=reg_write_data;	//7: reg_write_data
+	endcase
+end
+
+binary_7seg hex_0(out[3:0], HEX0);
+binary_7seg hex_1(out[7:4], HEX1);
+binary_7seg hex_2(out[11:8], HEX2);
+binary_7seg hex_3(out[15:12], HEX3);
+binary_7seg hex_4(out[19:16], HEX4);
+binary_7seg hex_5(out[23:20], HEX5);
+binary_7seg hex_6(out[27:24], HEX6);
+binary_7seg hex_7(out[31:28], HEX7);
+
+
+endmodule
